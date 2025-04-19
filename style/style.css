@@ -1,7 +1,11 @@
+.bag{
+    text-shadow: 3px 3px 5px red;
+}
 .container{
     width: 100%;
     min-height: 100vh;
-    background-image: url(Crystalenergymobilewallpaper.jpg);
+    background: url(https://pin.it/49Uz7WoiK);
+
 }
 .calculator{
     width: 100%;
@@ -11,6 +15,17 @@
 
 }
 .calculator h1{
-    font-size: 60px;
-
+    font-size: 70px;
 }
+.input-box{
+    margin: 50px 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background: fixed;
+    font-size: 10px;
+}
+
+
+
+
