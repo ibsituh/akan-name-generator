@@ -5,26 +5,24 @@ const akanNames = {
   
   const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   
-  function getAkanName() {
-    const day = document.getElementById("day").value;
-    const month = document.getElementById("month").value;
-    const year = document.getElementById("year").value;
+  function getAkanName(event) {
+    event.preventDefault(); // Prevent page refresh
+  
+    const birthday = document.getElementById("birthday").value;
     const genderInput = document.querySelector('input[name="gender"]:checked');
   
-    // Validate inputs
-    if (!day || !month || !year || !genderInput) {
-      alert("Please fill in all fields and select your gender.");
+    if (!birthday || !genderInput) {
+      alert("Please enter your birthdate and select your gender.");
       return;
     }
   
-    const birthDate = new Date(`${year}-${month}-${day}`);
-  
+    const birthDate = new Date(birthday);
     if (isNaN(birthDate.getTime())) {
-      alert("Please enter a valid date.");
+      alert("Invalid date.");
       return;
     }
   
-    const dayIndex = birthDate.getDay(); // 0 (Sun) to 6 (Sat)
+    const dayIndex = birthDate.getDay();
     const gender = genderInput.value;
   
     const akanName = akanNames[gender][dayIndex];
@@ -32,5 +30,4 @@ const akanNames = {
   
     document.getElementById("result").textContent =
       `You were born on a ${dayName}. Your Akan name is ${akanName}.`;
-  }
-  
+}
