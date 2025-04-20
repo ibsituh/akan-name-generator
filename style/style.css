@@ -12,7 +12,7 @@ body{
 .container{
     width: 100%;
     min-height: 100vh;
-    
+
 
 }
 .calculator{
@@ -33,6 +33,11 @@ body{
     background: fixed;
     font-size: 10px;
 }
+.image{
+    max-width: 150px;
+
+}
+
 
 
 
