@@ -34,8 +34,19 @@ body{
     font-size: 10px;
 }
 .image{
-    max-width: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.image img{
+    max-width: 300px;
 
+}
+.image h2{
+    font-size: 2em;
+    font-weight: 400;
 }
 
 
