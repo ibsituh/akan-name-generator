@@ -1,10 +1,18 @@
+body{
+    background-image: url(hehe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
 .bag{
     text-shadow: 3px 3px 5px red;
 }
 .container{
     width: 100%;
     min-height: 100vh;
-    background: url(https://pin.it/49Uz7WoiK);
+    
 
 }
 .calculator{
